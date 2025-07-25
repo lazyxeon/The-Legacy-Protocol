@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legacy-protocol"
+version = "0.1.0"
+description = "Symbolic AI architecture aligned with emergence, resonance, and φ-geometry"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "The Legacy Protocol Dev Group"}
+]
+
+dependencies = [
+  "torch>=2.0.0",
+  "numpy>=1.24.0",
+  "matplotlib",
+  "scipy"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.json", "*.txt", "*.py"]
